@@ -5,8 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            animation: myAnim 3s linear 0s infinite;
+        }
+        div:hover{ /*鼠标划上去触发以下效果*/
+            /*background-color: lightcoral;*/
+            animation-play-state: paused; /*鼠标划上去暂停*/
+        }
+        @keyframes myAnim{
+            0%{
+                width: 200px;
+                background-color: aquamarine;
+            }
+            50%{
+                width: 400px;
+                background-color: cyan;
+            }
+            100%{
+                width: 200px;
+                background-color: darkblue;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <div></div>
 </body>
 </html>

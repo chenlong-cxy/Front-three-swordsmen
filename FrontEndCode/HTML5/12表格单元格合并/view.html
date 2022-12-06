@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table align="center" border="1">
+        <tr>
+            <th>分类</th>
+            <th>数据类型</th>
+            <th>说明</th>
+        </tr>
+        <tr>
+            <td rowspan="9">数值类型</td>
+            <td>BIT(M)</td>
+            <td>位类型。M指定位数，默认值为1，范围1-64</td>
+        </tr>
+        <tr>
+            <td>TINYINT [UNSIGNED]</td>
+            <td>带符号的范围-128~127，无符号范围0~255，默认有符号</td>
+        </tr>
+        <tr>
+            <td>BOOL</td>
+            <td>使用0和1表示真和假</td>
+        </tr>
+        <tr>
+            <td>SMALLINT [UNSIGNED]</td>
+            <td>带符号是-2^15次方到2^15-1，无符号是2^16-1</td>
+        </tr>
+        <tr>
+            <td>INT [UNSIGNED]</td>
+            <td>带符号是-2^31次方到2^31-1，无符号是2^32-1</td>
+        </tr>
+        <tr>
+            <td>BIGINT [UNSIGNED]</td>
+            <td>带符号是-2^63次方到2^63-1，无符号是2^64-1</td>
+        </tr>
+        <tr>
+            <td>FLOAT[(M,D)] [UNSIGNED]</td>
+            <td>M指定显示长度，d指定小数位数，占用4字节</td>
+        </tr>
+        <tr>
+            <td>DOUBLE[(M,D)] [UNSIGNED]</td>
+            <td>表示比float精度更大的小数，占用空间8字节</td>
+        </tr>
+        <tr>
+            <td>DECIMAL(M,D) [UNSIGNED]</td>
+            <td>定点数M指定长度，D表示小数点的位数</td>
+        </tr>
+
+        <tr>
+            <td rowspan="4">文本、二进制类型</td>
+            <td>CHAR(size)</td>
+            <td>固定长度字符串，最大255</td>
+        </tr>
+        <tr>
+            <td>VARCHAR(size)</td>
+            <td>可变长度字符串，最大长度65535</td>
+        </tr>
+        <tr>
+            <td>BLOB</td>
+            <td>二进制数据</td>
+        </tr>
+        <tr>
+            <td>TEXT</td>
+            <td>大文本，不支持全文索引，不支持默认值</td>
+        </tr>
+
+        <tr>
+            <td>时间日期</td>
+            <td>DATE/DATETIME/TIMESTAMP</td>
+            <td>日期类型(yyyy-mm-dd)(yyyy-mm-dd hh:mm:ss)timestamp时间戳</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">String类型</td>
+            <td>ENUM类型</td>
+            <td>ENUM是一个字符串对象，其值来自表创建时在列规定中显示枚举的一列值</td>
+        </tr>
+        <tr>
+            <td>SET类型</td>
+            <td>SET是一个字符串对象，可以有零个或多个值，其值来自表创建时规定的允许的一列值。指定包括多个set成员的set列时各成员之间用逗号间隔开。这样set成员值本身不能包含逗号</td>
+        </tr>
+    </table>
+</body>
+</html>
